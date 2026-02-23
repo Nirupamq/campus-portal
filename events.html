@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Events</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="navbar">
+    <h3>🎓 Campus Portal</h3>
+    <div>
+        <a href="home.html">Home</a>
+        <a href="events.html">Events</a>
+        <button onclick="toggleDark()">🌙</button>
+    </div>
+</div>
+<input type="text" id="search" placeholder="Search events..." onkeyup="searchEvents()">
+<div class="container">
+
+    <div class="card">
+        <span class="badge">NEW</span>
+        <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c" alt="Tech Event">
+        <h3>Tech Symposium</h3>
+        <p>March 10</p>
+        <button onclick="register('Tech Symposium')">Register</button>
+    </div>
+
+    <div class="card">
+        <img src="https://images.unsplash.com/photo-1521412644187-c49fa049e84d" alt="Sports Event">
+        <h3>Sports Meet</h3>
+        <p>March 15</p>
+        <button onclick="register('Sports Meet')">Register</button>
+    </div>
+
+    <div class="card">
+        <img src="https://images.unsplash.com/photo-1509062522246-3755977927d7" alt="Cultural Fest">
+        <h3>Cultural Fest</h3>
+        <p>March 20</p>
+        <button onclick="register('Cultural Fest')">Register</button>
+    </div>
+
+    <div class="card">
+        <img src="https://images.unsplash.com/photo-1531482615713-2afd69097998" alt="AI Workshop">
+        <h3>Workshop on AI</h3>
+        <p>March 25</p>
+        <button onclick="register('Workshop on AI')">Register</button>
+    </div>
+
+    <div class="card">
+        <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f" alt="Hackathon">
+        <h3>Hackathon 2026</h3>
+        <p>April 2</p>
+        <button onclick="register('Hackathon 2026')">Register</button>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

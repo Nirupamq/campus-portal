@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Home</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="navbar">
+    <h3>🎓 Campus Portal</h3>
+
+    <div class="nav-right">
+        <a href="home.html">Home</a>
+        <a href="events.html">Events</a>
+
+        <!-- profile section -->
+        <div class="profile" onclick="toggleProfile()">
+            <img src="https://i.pravatar.cc/40" alt="profile">
+            <span id="profileName"></span>
+        </div>
+    </div>
+</div>
+<div id="profileBox" class="profile-box">
+    <p>👤 <span id="profileNameBox"></span></p>
+    <button onclick="logout()">Logout</button>
+</div>
+
+<!-- HERO WELCOME SECTION -->
+<div class="hero">
+    <div class="hero-text">
+        <h2>Hello, <span id="nameDisplay"></span></h2>
+<p class="subtitle">Welcome to your campus event dashboard</p>
+    </div>
+</div>
+
+<div class="container">
+
+    <div class="card">
+        <h3>🎯 Quick Actions</h3>
+        <button onclick="window.location='events.html'">
+            View Events
+        </button>
+        <br><br>
+        <button onclick="window.location='registered.html'">
+            Registered Events
+        </button>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

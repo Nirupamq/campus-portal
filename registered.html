@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registered Events</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="navbar">
+    <h3>🎓 Campus Portal</h3>
+</div>
+
+<div class="container">
+    <h2>Your Registered Events</h2>
+    <ul id="list"></ul>
+</div>
+
+<script>
+let events = JSON.parse(localStorage.getItem("events")) || [];
+let list = document.getElementById("list");
+
+events.forEach(e => {
+    let li = document.createElement("li");
+    li.innerText = e;
+    list.appendChild(li);
+});
+</script>
+
+</body>
+</html>
